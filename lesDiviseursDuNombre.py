@@ -40,9 +40,6 @@ def  CouleurJaune():#Jaune
         l["bg"]="yellow"
         lab["bg"]="yellow"
         lresu["bg"]="yellow"
-def maPhoto():
-        lb=Label(text="Ecce omo",image=PhotoImage(file="kla.png"))
-        lb.pack(side=BOTTOM)
 #ma fenetre principale
 fen=Tk()#ma fenetre
 fen["bg"]="white"
@@ -67,7 +64,6 @@ couleur.add_command(label="Grise",command=CouleurGrise)#couleur verte
 couleur.add_command(label="Jaune",command=CouleurJaune)#couleur verte
 
 meni.add_cascade(label="Couleur",menu=couleur)
-meni.add_command(label='Developped by Robert KULE',command=maPhoto)
 fen.config(menu=meni)
 
 
